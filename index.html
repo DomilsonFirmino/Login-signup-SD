@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/resets.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>Signin-Signup</title>
+</head>
+<body>
+    <main>
+        
+        <div class="sign in">
+
+
+            <div class="left">
+                <div>
+                    <a href="">
+                        <img src="assets/img/google.svg" alt="">
+                        <p>Google</p>
+                    </a>
+                    <a href="">
+                        <img src="assets/img/facebook.svg" alt="">
+                        <p>Facebook</p>
+                    </a>
+                </div>
+                
+                <div class="striped">
+                    <span class="striped__line"></span>
+                    <span class="striped__text | text-size-300">Or continue with</span>
+                    <span class="striped__line"></span>
+                </div>
+                <form>
+                
+                    <input type="email" placeholder="Email" name="email" id="email" required>
+                    <div class="input__password">
+                        <input type="password" placeholder="Password" name="password" id="password" required>
+                        <div class="toggle_view">
+                            <i class="far fa-eye"></i>
+                            <i class="fas fa-eye-slash"></i>
+                        </div>
+                    </div>
+                    <div class="form__options flex space-between">
+                        <section class="checkbox flex vertical-center">
+                            <input type="checkbox" name="remember" id="checkbox"><label for="checkbox">Remember me</label>
+                        </section>
+                        <a class="accent-red" href="#">Recover Password</a>
+                    </div>
+                    <button class="btn | text-color-darkgray text-size-500 regular" type="submit"> Log in</button>
+                </form>
+            </div>
+
+            <div class="right">
+                <section>
+                    <div class="head__section">
+                        <img src="assets/img/thumbs-up.svg" alt="">
+                        <h2></h2>
+                    </div>
+                    <p></p>
+                </section>
+            </div>
+
+
+        </div>
+
+        <div class="sign up">
+            
+            <div class="left">
+                <div class="logo">
+                    <img src="assets/img/logo.svg" alt="">
+                </div>
+                <div class="content">
+                    <div class="fotos">
+                        <img src="assets/img/flash.svg" alt="">
+                        <h2>Royal Stock Images</h2>
+                    </div>
+                    <div>
+                        <img src="assets/img/microscope.svg" alt="">
+                        <p>Best stock photos</p>
+                    </div>
+                    <div class="flash">
+                        <img src="assets/img/flash.svg" alt="">
+                        <h2>Image Editor</h2>
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="right">
+
+                <div>
+                    <a href="">
+                        <img src="assets/img/google.svg" alt="">
+                        <p>Google</p>
+                    </a>
+                    <a href="">
+                        <img src="assets/img/facebook.svg" alt="">
+                        <p>Facebook</p>
+                    </a>
+                </div>
+                <div class="striped">
+                    <span class="striped__line"></span>
+                    <span class="striped__text | text-size-300">Or continue with</span>
+                    <span class="striped__line"></span>
+                </div>
+                <form>
+                
+                    <input type="text" placeholder="Full Name" name="fname" id="fname" required>
+                    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+                    <div class="input__password">
+                        <input type="password" placeholder="Password" name="password" id="password" required>
+                        <div class="toggle_view">
+                            <i class="far fa-eye"></i>
+                            <i class="fas fa-eye-slash"></i>
+                        </div>
+                    </div>
+                
+                    <div class="input__password">
+                        <input type="password" placeholder="Confirm Password" name="confirm" id="confirm" required>
+                        <div class="toggle_view">
+                            <i class="far fa-eye"></i>
+                            <i class="fas fa-eye-slash"></i>
+                        </div>
+                    </div>
+                    <button type="submit">Create Account</button>
+                </form>
+                <p>By continuing you indicate that you read and agreed to the Terms of use</p>
+
+            </div>
+        </div>
+    
+    </main>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

@@ -18,8 +18,6 @@ Desta vez, desenvolveremos uma tela de login e inscrição com base no layout da
 ## Autores
 
 - [@PedroMakengo](https://www.github.com/PedroMakengo)
-- [@DomilsonFirmino](https://github.com/DomilsonFirmino/Login-signup-SD)
-
 
 ## Apêndice
 

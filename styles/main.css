@@ -37,6 +37,7 @@
 /*general styles*/
 main{
     min-height: 100vh;
+    overflow-y: hidden;
 }
 @media (min-width: 60em){
     .col{
@@ -50,14 +51,20 @@ main{
 }
 a{
     text-decoration: none;
+    color: inherit;
+}
+body{
+    font-family: var(--ff-poppins);
 }
 /*sigin*/
 .sign.flex{
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 @media (min-width:60em){
     .sign.flex{
         display: flex;
+        flex-direction: row;
     }
 }
 
@@ -111,6 +118,41 @@ form button{
     border: 1px solid #D9D9D9;
     border-radius: 10px;
 }
+input[type="email"]{
+    margin-bottom: 1.5em;
+}
+
+.input__password{
+    margin-bottom: 1.5em;
+}
+.input__password{
+    position: relative;
+}
+.inputs input[type="password"]{
+    margin-bottom: 0;
+}
+
+.toggle_view{
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.far::before{
+    display: none;
+}
+.toggle_view.active .fas::before{
+    display: none;
+}
+
+.toggle_view.active .far::before{
+    display: block;
+}
+
 .btn{
     cursor: pointer;
     border: 2px solid #5A5A5A;
@@ -119,12 +161,6 @@ form button{
 .btn:hover{
     background-color: #5A5A5A;
     color: white;
-}
-input[type="email"]{
-    margin-bottom: 1.5em;
-}
-.input__password{
-    margin-bottom: 1.5em;
 }
 .checkbox{
     margin-bottom: 1.5em;

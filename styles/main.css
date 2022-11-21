@@ -56,6 +56,12 @@ a{
 body{
     font-family: var(--ff-poppins);
 }
+
+@media (min-width: 60em) {
+    body{
+        overflow-y: hidden;
+    }
+}
 /*sigin*/
 .sign.flex{
     display: flex;
@@ -213,7 +219,6 @@ input:checked::after{
 }
 
 .right{
-    display: flex;
     display: flex;
     align-items: flex-end;
 

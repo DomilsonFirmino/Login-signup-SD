@@ -11,16 +11,14 @@ Desta vez, desenvolveremos uma tela de login e inscrição com base no layout da
  - [JavaScript](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
  - [Figma](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
 
-## Instalação
+## live preview
 
-```bash
-  # git clone https://github.com/PedroMakengo/login-and-signup.git
-  # cd login-and-signup
-```
+- [login & signup](https://domilsonfirmino.github.io/Login-signup-SD/)
 
 ## Autores
 
 - [@PedroMakengo](https://www.github.com/PedroMakengo)
+- [@DomilsonFirmino](https://github.com/DomilsonFirmino/Login-signup-SD)
 
 
 ## Apêndice

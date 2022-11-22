@@ -75,7 +75,7 @@ body{
 }
 
 .left{
-    padding: 1.5em 2em 0;
+    padding: 1.5em 2em;
 }
 @media (min-width: 60em){
     .left{
@@ -124,13 +124,11 @@ form button{
     border: 1px solid #D9D9D9;
     border-radius: 10px;
 }
-input[type="email"]{
-    margin-bottom: 1.5em;
+input:not(:last-child)
+{
+    margin-bottom: 1em;
 }
 
-.input__password{
-    margin-bottom: 1.5em;
-}
 .input__password{
     position: relative;
 }
@@ -220,16 +218,62 @@ input:checked::after{
 
 .right{
     display: flex;
-    align-items: flex-end;
+    align-items: flex-end; 
 
     height: 50em;
     background-position: center;
 }
+.rightd{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5em 2em 0;
+}
+.rightd > .logo{
+    margin-bottom: 10em;
+}
+.rightd > .content{
+    max-width: 32ch;
+}
+.content > .fotos:nth-child(1){
+    width: 100%;
+}
+.content > section{
+    width: 100%;
+    
+    background: rgba(72, 69, 69, 0.13);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(50px);
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+.content > section > .fotos__content{
+    padding: 1.5em;
+    
+}
+
+.fotos__content img{
+    background-color: var(--clr-neutral-black);
+    padding: .8em .8em;
+    border-radius: 10px;
+    margin-bottom: 1.5em;
+}
 @media (min-width: 60em){
     .right{
         width: 35%;
-    }    
+    }
 }
+@media(min-width: 65em){
+
+    .rightd{
+        position: relative;
+    }
+    .flash{
+        position: absolute;
+        right: -6rem;
+        bottom: calc(0% + 15rem);
+    }
+}
+
 .right > section{
     margin-bottom: 3rem;
     margin-inline: 2rem;
@@ -280,8 +324,25 @@ input:checked::after{
 
 
 
+/*signup*/
+.fotos{
+    display: inline-flex;
+    align-items: center;
+    gap: .5em;
 
 
+    font-size: var(--fs-400);
+    font-weight: var(--fw-medium);
+
+
+    padding-block: .5em;
+    padding-left: .8em;
+    padding-right: 1.8  em;
+    border-radius: 10vh;
+}
+.flash{
+    padding-right: 2em;
+}
 /*Utility classes*/
 
 .text-size-300{ font-size: var(--fs-300);}
@@ -292,6 +353,9 @@ input:checked::after{
 .text-size-800{ font-size: var(--fs-800);}
 
 .text-center{ text-align: center;}
+.align-center{text-align: center;}
+
+.align-end{text-align: end;}
 
 
 .bold{font-weight: var(--fw-bold);}
@@ -301,9 +365,10 @@ input:checked::after{
 
 
 .bg-img-signin{background-image: url("../assets/img/bg-login.png");background-repeat: no-repeat;background-size: cover;}
-.bg-img-signup{background-image: url("../assets/img/bg-signup.png");background-repeat: no-repeat;background-size: cover;}
+.bg-img-signup{background-image: url("../assets/img/bg-signup.png");background-repeat: no-repeat;background-size: cover;background-position-y: bottom; background-position:bottom center;}
 
-.bg-clr-light{background-color:var(--clr-neutral-lightblue);}
+.bg-clr-light{background-color:var(--clr-neutral-darkGray)}
+.bg-clr-lighter{background-color: var(--clr-neutral-lightgray);}
 .bg-clr-green{background-color: var(--clr-primary-accent);}
 
 
@@ -315,7 +380,6 @@ input:checked::after{
 .column{flex-direction: column;}
 .space-between{justify-content: space-between;}
 .vertical-center{align-items: center;}
-.align-center{text-align: center;}
 
 
 .text-clr-accent{color: var(--clr-primary-accent);}

@@ -6,75 +6,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/resets.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Signup</title>
 </head>
 <body>
     <main>
         <div class="sign up | flex">
             
-            <div class="left">
+            <div class="col right rightd | bg-img-signup">
                 <div class="logo">
                     <img src="assets/img/logo.svg" alt="">
                 </div>
                 <div class="content">
-                    <div class="fotos">
+                    <div class="fotos bg-clr-green margin-bottom-400">
                         <img src="assets/img/flash.svg" alt="">
-                        <h2>Royal Stock Images</h2>
+                        <p>Royal Stock Images</p>
                     </div>
-                    <div>
-                        <img src="assets/img/microscope.svg" alt="">
-                        <p>Best stock photos</p>
-                    </div>
-                    <div class="flash">
+                    <section class="margin-bottom-400">
+                        <div class="fotos__content">
+                            <img src="assets/img/microscope.svg" alt="">
+                            <p class="text-size-500 text-clr-white">Best stock photos and Videos from across the internet</p>
+                        </div>
+                    </section>
+                    <div class="fotos flash | bg-clr-light text-clr-white">
                         <img src="assets/img/flash.svg" alt="">
-                        <h2>Image Editor</h2>
+                        <p>Image Editor</p>
                     </div>
                 </div>
 
             </div>
             
-            <div class="right">
+            <div class="col left">
 
-                <div class="accounts">
-                    <a href="" class="account">
-                        <img src="assets/img/google.svg" alt="">
-                        <p>Google</p>
-                    </a>
-                    <a href="" class="account">
-                        <img src="assets/img/facebook.svg" alt="">
-                        <p>Facebook</p>
-                    </a>
+                <div class="left__head | margin-bottom-900 align-end">
+                    <p>have an account?<span class="text-clr-accent margin-left-400"><a href="index.html">Sign in</a></span></p>
                 </div>
-                <div class="striped">
-                    <span class="striped__line"></span>
-                    <span class="striped__text | text-size-300">Or continue with</span>
-                    <span class="striped__line"></span>
+                <div class="container margin-bottom-800">
+                    <div class="text-center margin-bottom-700">
+                        <h1 class="bold text-size-800">Get Started with Maker</h1>
+                        <p>Getting started is easy</p>
+                    </div>
+                    <div class="accounts">
+                        <a href="" class="account">
+                            <img src="assets/img/google.svg" alt="">
+                            <p>Google</p>
+                        </a>
+                        <a href="" class="account">
+                            <img src="assets/img/facebook.svg" alt="">
+                            <p>Facebook</p>
+                        </a>
+                    </div>
+                    <div class="striped">
+                        <span class="striped__line"></span>
+                        <span class="striped__text | text-size-300">Or continue with</span>
+                        <span class="striped__line"></span>
+                    </div>
+                    <form>
+                    
+                        <input type="text" placeholder="Full Name" name="fname" id="fname" required>
+                        <input type="email" placeholder="Enter Email" name="email" id="email" required>
+                    
+                        <div class="input__password">
+                            <input type="password" placeholder="Password" name="password" id="password" required>
+                            <div class="toggle_view">
+                                <i class="far fa-eye"></i>
+                                <i class="fas fa-eye-slash"></i>
+                            </div>
+                        </div>
+                    
+                        <div class="input__password">
+                            <input type="password" placeholder="Confirm Password" name="confirm" id="confirm" required>
+                            <div class="toggle_view">
+                                <i class="far fa-eye"></i>
+                                <i class="fas fa-eye-slash"></i>
+                            </div>
+                        </div>
+                        <button class="btn green | bg-clr-green" type="submit">Create Account</button>
+                    </form>
                 </div>
-                <form>
-                
-                    <input type="text" placeholder="Full Name" name="fname" id="fname" required>
-                    <input type="email" placeholder="Enter Email" name="email" id="email" required>
-                    <div class="input__password">
-                        <input type="password" placeholder="Password" name="password" id="password" required>
-                        <div class="toggle_view">
-                            <i class="far fa-eye"></i>
-                            <i class="fas fa-eye-slash"></i>
-                        </div>
-                    </div>
-                
-                    <div class="input__password">
-                        <input type="password" placeholder="Confirm Password" name="confirm" id="confirm" required>
-                        <div class="toggle_view">
-                            <i class="far fa-eye"></i>
-                            <i class="fas fa-eye-slash"></i>
-                        </div>
-                    </div>
-                    <button type="submit">Create Account</button>
-                </form>
-                <p>By continuing you indicate that you read and agreed to the Terms of use</p>
+                <p class="text-center">By continuing you indicate that you read and agreed to the Terms of use</p>
 
             </div>
         </div>
     </main>
+    <script src="scripts/script.js"></script>
 </body>
 </html>

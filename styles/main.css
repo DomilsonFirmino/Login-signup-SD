@@ -35,10 +35,6 @@
     --margin-bottom-900: 5.5em;
 }
 /*general styles*/
-main{
-    min-height: 100vh;
-    overflow-y: hidden;
-}
 @media (min-width: 60em){
     .col{
         min-height: 100vh;
